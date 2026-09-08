@@ -1,0 +1,72 @@
+{
+  "query": "Generate exam questions on Big Data frameworks and distributed computing with Spark",
+  "embedding_strategy": "sbert",
+  "similarity_strategy": "cosine",
+  "generation_params": {
+    "generator_model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "max_context_tokens": 3000,
+    "number_of_questions": 3,
+    "number_of_chunks_retrieved": 5,
+    "generation_latency_s": 548.12
+  },
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.72081,
+      "id": "80ffffd7-e819-46dc-9715-8ceca5093390",
+      "source_pdf": "intro.pdf",
+      "page_num": 2,
+      "chunk_id": "intro.pdf_p002_c000",
+      "start_word": 0,
+      "end_word": 71,
+      "chunk_text": "info-h-515: second part • Second part of the course Big Data : Distributed Data Management and Scalable Analytics • Required ◦ first part of the course (throughput, latency, distributed computing, MapReduce, Lambda Architectures, Spark, Spark streaming, scalability) ◦ foundations of Machine Learning (INFOF422) ◦ programming skills in Python, Spark • From data management perspective to analytics perspective. • Exam: 1. Some oral questions in the UV exam. 2. Project on LLM."
+    },
+    {
+      "rank": 2,
+      "score": 0.562003,
+      "id": "b0cca50d-859f-44d7-afe1-6c39f388a0d4",
+      "source_pdf": "1-intro.pdf",
+      "page_num": 48,
+      "chunk_id": "1-intro.pdf_p048_c000",
+      "start_word": 0,
+      "end_word": 88,
+      "chunk_text": "Google's solutions • New programming models and frameworks for distributed and scalable data analysis Name Purpose Google File System A distributed file system for scalable storage and high-throughput retrieval Map Reduce A programming model + execution environment for general-purpose distributed batch processing BigTable A NoSQL Database Dremel, F1 A query language for interactive SQLlike analysis of structured datasets ... Lots of research ongoing! Open Source Impl Apache Hadoop • HDFS • M/R Apache HBase Apache Spark/Drill .... High-level design described in a series of papers; no implementation available"
+    },
+    {
+      "rank": 3,
+      "score": 0.548786,
+      "id": "08638bf9-90fd-4c19-b012-c4029e8b90c9",
+      "source_pdf": "a_ScalableMachineLearningAlgorithmsforBigDataAnalytics-ChallengesandOpportunities.pdf",
+      "page_num": 10,
+      "chunk_id": "a_ScalableMachineLearningAlgorithmsforBigDataAnalytics-ChallengesandOpportunities.pdf_p010_c000",
+      "start_word": 0,
+      "end_word": 197,
+      "chunk_text": "Journal of Artificial Intelligence Research By The Science Brigade (Publishing) Group 133 Journal of Artificial Intelligence Research Volume 2 Issue 2 Semi Annual Edition | Fall 2022 This work is licensed under CC BY-NC-SA 4.0. View complete license here chunks, which are processed independently by \"mappers,\" and the results are then combined by \"reducers\" to produce the final output. Hadoop is particularly well-suited for batch processing of large datasets, but it can be less efficient for real-time or iterative ML tasks. Apache Spark for In-Memory Processing Apache Spark is a more recent distributed computing framework that has gained popularity for its ability to process data in-memory, making it faster and more efficient than Hadoop for certain types of ML tasks. Spark supports a wide range of ML algorithms through its MLlib library, including classification, regression, clustering, and recommendation algorithms. One of the key advantages of Spark is its support for iterative ML tasks, where the model needs to be updated multiple times during training. 5.2 Cloud-based Machine Learning Platforms Cloud platforms, such as AWS, Google Cloud, and Microsoft Azure, offer scalable infrastructure that can be used to train and deploy ML models for Big Data analytics. These"
+    },
+    {
+      "rank": 4,
+      "score": 0.548543,
+      "id": "1e645868-f47a-43f7-b630-2c1801211e97",
+      "source_pdf": "2-spark.pdf",
+      "page_num": 6,
+      "chunk_id": "2-spark.pdf_p006_c000",
+      "start_word": 0,
+      "end_word": 89,
+      "chunk_text": "WHAT IS SPARK? file:///Users/hidders/Documents/Education/Big Data - Distribu... 1 of 1 /2018, 13:34 • Apache Spark is a fast, in-memory, distributed data processing engine. • Supports efficient execution of different kinds of workloads: batch, streaming, machine learning and SQL Ease of programming • A general programming model based on composing arbitrary operators. • Allows combining different processing models seamlessly in the same application: ◦ Data classification through Spark machine learning library. ◦ Streaming data through source via Spark Streaming. ◦ Querying the resulting data in real time through Spark SQL."
+    },
+    {
+      "rank": 5,
+      "score": 0.541674,
+      "id": "17abfa32-58ad-41dd-8187-d913ad5af3c7",
+      "source_pdf": "a_TowardScalableSystemsForBigDataAnalytics.pdf",
+      "page_num": 2,
+      "chunk_id": "a_TowardScalableSystemsForBigDataAnalytics.pdf_p002_c002",
+      "start_word": 480,
+      "end_word": 780,
+      "chunk_text": "in handling big data challenges. We can construct various big data applications based on these innovative technologies and platforms. In light of the proliferation of big-data technologies, a systematic framework should be in order to capture the fast evolution of big-data research and development efforts and put the development in different frontiers in perspective. FIGURE 1. A modular data center was built at Nanyang Technological University (NTU) for system/testbed research. The testbed hosts 270 servers organized into 10 racks. In this paper, learning from our first-hand experience of building a big-data solution on our private modular data center testbed (as illustrated in Fig. 1), we strive to offer a systematic tutorial for scalable big-data systems, focusing on the enabling technologies and the architectural principle. It is our humble expectation that the paper can serve as a first stop for domain experts, big-data users and the general audience to look for information and guideline in their specific needs for big-data solutions. For example, the domain experts could follow our guideline to develop their own bigdata platform and conduct research in big-data domain; the big-data users can use our framework to evaluate alternative solutions proposed by their vendors; and the general audience can understand the basic of big-data and its impact on their work and life. For such a purpose, we first present a list of alternative definitions of big data, supplemented with the history of big-data and big-data paradigms. Following that, we introduce a generic framework to decompose big data platforms into four components, i.e., data generation, data acquisition, data storage, and data analysis. For each stage, we survey current research and development efforts and provide engineering insights for architectural design. Moving toward a specific solution, we then delve on Hadoop - the de facto choice for big data analysis platform,"
+    }
+  ],
+  "prompt": "TASK: Generate exactly 3 exam question(s) on the following topic:\n\"Generate exam questions on Big Data frameworks and distributed computing with Spark\"\n\nINSTRUCTIONS:\n- Use ONLY the SOURCES provided below.\n- If the sources are insufficient, say so explicitly.\n- Available source numbers: [1], [2], [3], [4], [5].\n- You MUST output exactly 3 question(s), no more, no less.\n- For EACH question, you MUST follow this exact format (including the --- separator):\n\nQ: <question text>\nA: <expected answer key>\nCITATIONS: <e.g. [1], [2]>\n---\n\nDo NOT group citations at the end. CITATIONS must appear after each individual answer.\n\nSOURCES:\n[1] (source: intro.pdf, page 2, chunk intro.pdf_p002_c000)\ninfo-h-515: second part • Second part of the course Big Data : Distributed Data Management and Scalable Analytics • Required ◦ first part of the course (throughput, latency, distributed computing, MapReduce, Lambda Architectures, Spark, Spark streaming, scalability) ◦ foundations of Machine Learning (INFOF422) ◦ programming skills in Python, Spark • From data management perspective to analytics perspective. • Exam: 1. Some oral questions in the UV exam. 2. Project on LLM.\n\n[2] (source: 1-intro.pdf, page 48, chunk 1-intro.pdf_p048_c000)\nGoogle's solutions • New programming models and frameworks for distributed and scalable data analysis Name Purpose Google File System A distributed file system for scalable storage and high-throughput retrieval Map Reduce A programming model + execution environment for general-purpose distributed batch processing BigTable A NoSQL Database Dremel, F1 A query language for interactive SQLlike analysis of structured datasets ... Lots of research ongoing! Open Source Impl Apache Hadoop • HDFS • M/R Apache HBase Apache Spark/Drill .... High-level design described in a series of papers; no implementation available\n\n[3] (source: a_ScalableMachineLearningAlgorithmsforBigDataAnalytics-ChallengesandOpportunities.pdf, page 10, chunk a_ScalableMachineLearningAlgorithmsforBigDataAnalytics-ChallengesandOpportunities.pdf_p010_c000)\nJournal of Artificial Intelligence Research By The Science Brigade (Publishing) Group 133 Journal of Artificial Intelligence Research Volume 2 Issue 2 Semi Annual Edition | Fall 2022 This work is licensed under CC BY-NC-SA 4.0. View complete license here chunks, which are processed independently by \"mappers,\" and the results are then combined by \"reducers\" to produce the final output. Hadoop is particularly well-suited for batch processing of large datasets, but it can be less efficient for real-time or iterative ML tasks. Apache Spark for In-Memory Processing Apache Spark is a more recent distributed computing framework that has gained popularity for its ability to process data in-memory, making it faster and more efficient than Hadoop for certain types of ML tasks. Spark supports a wide range of ML algorithms through its MLlib library, including classification, regression, clustering, and recommendation algorithms. One of the key advantages of Spark is its support for iterative ML tasks, where the model needs to be updated multiple times during training. 5.2 Cloud-based Machine Learning Platforms Cloud platforms, such as AWS, Google Cloud, and Microsoft Azure, offer scalable infrastructure that can be used to train and deploy ML models for Big Data analytics. These\n\n[4] (source: 2-spark.pdf, page 6, chunk 2-spark.pdf_p006_c000)\nWHAT IS SPARK? file:///Users/hidders/Documents/Education/Big Data - Distribu... 1 of 1 /2018, 13:34 • Apache Spark is a fast, in-memory, distributed data processing engine. • Supports efficient execution of different kinds of workloads: batch, streaming, machine learning and SQL Ease of programming • A general programming model based on composing arbitrary operators. • Allows combining different processing models seamlessly in the same application: ◦ Data classification through Spark machine learning library. ◦ Streaming data through source via Spark Streaming. ◦ Querying the resulting data in real time through Spark SQL.\n\n[5] (source: a_TowardScalableSystemsForBigDataAnalytics.pdf, page 2, chunk a_TowardScalableSystemsForBigDataAnalytics.pdf_p002_c002)\nin handling big data challenges. We can construct various big data applications based on these innovative technologies and platforms. In light of the proliferation of big-data technologies, a systematic framework should be in order to capture the fast evolution of big-data research and development efforts and put the development in different frontiers in perspective. FIGURE 1. A modular data center was built at Nanyang Technological University (NTU) for system/testbed research. The testbed hosts 270 servers organized into 10 racks. In this paper, learning from our first-hand experience of building a big-data solution on our private modular data center testbed (as illustrated in Fig. 1), we strive to offer a systematic tutorial for scalable big-data systems, focusing on the enabling technologies and the architectural principle. It is our humble expectation that the paper can serve as a first stop for domain experts, big-data users and the general audience to look for information and guideline in their specific needs for big-data solutions. For example, the domain experts could follow our guideline to develop their own bigdata platform and conduct research in big-data domain; the big-data users can use our framework to evaluate alternative solutions proposed by their vendors; and the general audience can understand the basic of big-data and its impact on their work and life. For such a purpose, we first present a list of alternative definitions of big data, supplemented with the history of big-data and big-data paradigms. Following that, we introduce a generic framework to decompose big data platforms into four components, i.e., data generation, data acquisition, data storage, and data analysis. For each stage, we survey current research and development efforts and provide engineering insights for architectural design. Moving toward a specific solution, we then delve on Hadoop - the de facto choice for big data analysis platform,\n\nBEGIN OUTPUT:\n",
+  "generated_output": "\nQ: What is Apache Spark and what are its key advantages?\nA: Apache Spark is a fast, in-memory, distributed data processing engine that supports efficient execution of different kinds of workloads: batch, streaming, machine learning, and SQL. One of the key advantages of Spark is its support for iterative machine learning tasks, where the model needs to be updated multiple times during training. [4]\n\nCITATIONS: [4]\n\n---\n\nQ: What is the purpose of Google's MapReduce programming model and execution environment?\nA: The purpose of Google's MapReduce programming model and execution environment is for general-purpose distributed batch processing of large datasets. [2]\n\nCITATIONS: [2]\n\n---\n\nQ: What is the difference between Apache Hadoop and Apache Spark for Big Data analytics?\nA: Apache Hadoop is particularly well-suited for batch processing of large datasets, but it can be less efficient for real-time or iterative machine learning tasks. Apache Spark, on the other hand, is a more recent distributed computing framework that has gained popularity for its ability to process data in-memory, making it faster and more efficient than Hadoop for certain types of machine learning tasks. [3]\n\nCITATIONS: [3]",
+  "elapsed_seconds": 584.92
+}
