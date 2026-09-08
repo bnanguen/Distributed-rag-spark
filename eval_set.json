@@ -1,0 +1,182 @@
+[
+  {
+    "topic_id": "t01",
+    "topic": "Resilient Distributed Datasets (RDDs) in Apache Spark: distributed, immutable, and fault-tolerant properties",
+    "gold_pages": [
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 9
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 10
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 11
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 12
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 14
+      }
+    ]
+  },
+  {
+    "topic_id": "t02",
+    "topic": "RDD transformations in Apache Spark: map, flatMap, and filter operations",
+    "gold_pages": [
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 20
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 21
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 22
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 23
+      },
+      {
+        "source_pdf": "2-spark.pdf",
+        "page_num": 24
+      }
+    ]
+  },
+  {
+    "topic_id": "t03",
+    "topic": "Big Data definitions",
+    "gold_pages": [
+      {
+        "source_pdf": "1-intro.pdf",
+        "page_num": 15
+      },
+      {
+        "source_pdf": "1-intro.pdf",
+        "page_num": 16
+      },
+      {
+        "source_pdf": "1-intro.pdf",
+        "page_num": 17
+      },
+      {
+        "source_pdf": "1-intro.pdf",
+        "page_num": 18
+      }
+    ]
+  },
+  {
+    "topic_id": "t04",
+    "topic": "Map Reduce mr programming model: map and reduce phases",
+    "gold_pages": [
+      {
+        "source_pdf": "mr.pdf",
+        "page_num": 2
+      },
+      {
+        "source_pdf": "mr.pdf",
+        "page_num": 3
+      },
+      {
+        "source_pdf": "mr.pdf",
+        "page_num": 4
+      },
+      {
+        "source_pdf": "mr.pdf",
+        "page_num": 7
+      }
+    ]
+  },
+  {
+    "topic_id": "t05",
+    "topic": "CAP theorem: consistency, availability, and partition tolerance trade-offs in distributed systems",
+    "gold_pages": [
+      {
+        "source_pdf": "5-nosql.pdf",
+        "page_num": 34
+      },
+      {
+        "source_pdf": "5-nosql.pdf",
+        "page_num": 35
+      },
+      {
+        "source_pdf": "5-nosql.pdf",
+        "page_num": 36
+      }
+    ]
+  },
+  {
+    "topic_id": "t06",
+    "topic": "MINI-BATCHING IN SPARK STREAMING",
+    "gold_pages": [
+      {
+        "source_pdf": "3-stream_proc.pdf",
+        "page_num": 100
+      },
+      {
+        "source_pdf": "3-stream_proc.pdf",
+        "page_num": 101
+      },
+      {
+        "source_pdf": "3-stream_proc.pdf",
+        "page_num": 102
+      }
+    ]
+  },
+  {
+    "topic_id": "t07",
+    "topic": "Filtering Analysis",
+    "gold_pages": [
+      {
+        "source_pdf": "4-stream_algos.pdf",
+        "page_num": 29
+      },
+      {
+        "source_pdf": "4-stream_algos.pdf",
+        "page_num": 30
+      },
+      {
+        "source_pdf": "4-stream_algos.pdf",
+        "page_num": 31
+      },
+      {
+        "source_pdf": "4-stream_algos.pdf",
+        "page_num": 32
+      }
+    ]
+  },
+  {
+    "topic_id": "t08",
+    "topic": "Collaborative filtering for recommendation systems: user based, past user behavior, item based, nearest-neighbor, and latent factor models",
+    "gold_pages": [
+      {
+        "source_pdf": "recommend.pdf",
+        "page_num": 5
+      },
+      {
+        "source_pdf": "recommend.pdf",
+        "page_num": 7
+      },
+      {
+        "source_pdf": "recommend.pdf",
+        "page_num": 8
+      },
+      {
+        "source_pdf": "recommend.pdf",
+        "page_num": 12
+      },
+      {
+        "source_pdf": "recommend.pdf",
+        "page_num": 17
+      }
+    ]
+  }
+]
