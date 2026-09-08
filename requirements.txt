@@ -1,0 +1,13 @@
+pyspark
+pypdf
+numpy
+pandas
+pyarrow
+scikit-learn
+gensim
+sentence-transformers
+transformers
+torch
+accelerate
+bitsandbytes
+matplotlib
